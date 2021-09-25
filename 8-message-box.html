@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #messagebox{
+            background-color: royalblue;
+            text-align: center;
+            color: white;
+
+        }
+        #header{
+            height: 25px;
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+        #content{
+            height: 200px;
+            padding: 10px;
+            display: none;
+        }
+
+        #close{
+            float:right;
+        }
+        #close:hover{
+            color: red;
+        }
+    </style>
+
+    <script>
+
+    $(function(){
+        $("#header").click(function(){
+            $("#content").toggle("slow")
+        })
+
+        $("#close").click(function(){
+            $("#messagebox").toggle("slow")
+        })
+
+    })
+
+
+    </script>
+
+
+</head>
+<body>
+    <div id="messagebox">
+
+        <div id="header">mesajiniz var
+            <span id="close" >X</span>
+
+        </div>
+        <div id="content"></div>
+    </div>
+
+
+    <script>
+    
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <style>
+        .highlight{
+            background-color: yellow;
+        }
+
+        .green{
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>JQuary Helper Methods</h1>
+    <ul>
+        <li>JQuary Selectors</li>
+        <li>JQuary Methods</li>
+        <li>Jquary Animations</li>
+    </ul>
+
+
+    <img src="img/merso.jpg" width="500px" alt="">
+
+    <input id="ad" type="text" placeholder="adiniz" >
+    <input id="soyad" type="text" class="green" placeholder="soyadiniz" >
+    <button id="btn" onclick="adsoyad();">KAYDET</button>
+    <script>
+    
+    console.log($("h1").text())
+    console.log($("ul").text())
+    console.log($("ul li").text())
+    $("h1").text("JavaScript")
+
+    console.log($("input").val())
+    //$("input").val("giris yapiniz")
+
+    function adsoyad(){
+        var ad=$("#ad").val()
+        var soyad=$("#soyad").val()
+
+        console.log("adiniz soyadiniz : "+ad+" "+soyad)
+        $("#ad").toggleClass("highlight")
+        $("#soyad").removeClass("green")
+    }
+
+    $("img").attr("width","400")
+  
+
+    </script>
+</body>
+</html>

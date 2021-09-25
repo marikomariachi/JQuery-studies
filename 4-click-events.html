@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<style>
+    .paragrafrenklendir{
+            color:red;
+            font-size: 20px;
+    }
+</style>
+
+</head>
+<body>
+    
+    <p id="1">web developer training</p>
+    <p id="2">web developer training</p>
+    <p class="paragraf">web developer training</p>
+    <p class="paragraf">web developer training</p>
+
+    
+    
+    <script>
+    $(document).ready(function(){
+        $(".paragraf").click(function(){
+            $(this).addClass("paragrafrenklendir")
+        })
+    })
+
+    // $(function(){
+    // console.log("document ready")})
+    
+    </script>
+</body>
+</html>

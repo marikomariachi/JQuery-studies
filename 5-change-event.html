@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+  
+    <form>
+        <p>ad <input type="text" class="control"></p>
+
+        <p>
+            hobiler
+            <select class="control">
+                <option value="spor" selected="selected">spor yapmak</option>
+                <option value="sinema">sinema</option>
+            </select>
+        </p>
+    </form>
+
+
+    <p>Deneme</p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+    <script>
+   
+        $(document).ready(function(){ 
+            $(".control").change(function(){
+              console.log(  $(this).val())
+            })
+        })
+
+        
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide("slow")
+            })
+
+            $("#show").click(function(){
+                $("p").show("fast",function(){
+                    alert("paragraf gosterildi")
+                })
+            })
+            $("#toggle").click(function(){
+                $("p").toggle("slow")
+            })
+        })
+
+    </script>
+</body>
+</html>

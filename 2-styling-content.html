@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <h3 id="header">JQuery Dersleri</h3>
+    <ul id="liste">
+        <li class="item">JQuery Referance</li>
+        <li class="item">Sellector</li>
+        <li class="item">JQuery <a href="#"> Plugins</a></li>
+    </ul>
+    <ul>
+        <li class="item">JQuery Referance</li>
+        <li class="item">Sellector</li>
+        <li class="item">JQuery <a href="#"> Plugins</a></li>
+    </ul>
+<input type="">
+
+    <script>
+    
+   //document.getElementById("header").style.color"red"; 
+    $("#header").css("color","red")
+    //$("#liste a").css("text-decoration","none")
+    
+    var styles = {
+        color :"yellow",
+        border:"1px solid red",
+        fontSize:"20px"
+    }
+
+    $("#liste li").css(styles)
+
+    //$(".item").css({display:"none"})
+
+    </script>
+</body>
+</html>
